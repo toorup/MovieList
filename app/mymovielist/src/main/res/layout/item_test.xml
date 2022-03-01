@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+	android:layout_gravity="center"
+    >
+
+
+	<FrameLayout 
+    	android:layout_width="match_parent" 
+    	android:layout_height="0dp"
+		android:layout_weight="8"
+		android:layout_gravity="center"
+		android:id="@+id/pparent" >
+
+		<com.icecool.mymovielist.RoundImageView
+    	    android:id="@+id/img_id"
+    	    android:scaleType="fitXY"
+        	android:layout_width="match_parent"   
+       		android:layout_height="match_parent"
+			android:layout_margin="0dp"/>  
+      
+   	 	<TextView
+   	 	    android:id="@+id/genxing"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="start|bottom"
+        	android:layout_marginBottom="5dip"
+			android:layout_marginStart="2dip"
+        	android:background="#00000000"
+        	android:padding="0dip"
+			android:text="更新至18集"
+        	android:singleLine="true"
+        	android:textSize="12sp"
+        	android:maxEms="8"
+       		android:textColor="#ffffffff" />
+    
+    	<TextView
+    	    android:id="@+id/fenshu"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="end"
+        	android:layout_marginBottom="30dip"
+			android:layout_marginTop="2dip"
+			android:layout_marginEnd="2dip"
+        	android:padding="0dip"
+			android:text="5.0"
+			android:background="@drawable/ranjiaobutton"
+        	android:textColor="#ffffffff"  />
+  	</FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+		android:maxHeight="30dp"
+		android:minHeight="20dp"
+        android:textColor="#000"
+		android:textStyle="bold"
+        android:gravity="center"  
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/Ftitle"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
